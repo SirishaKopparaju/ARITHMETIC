@@ -15,11 +15,11 @@ echo "compute3=" ${operation[compute3]}
 echo "compute4=" ${operation[compute4]}
 echo "operation" ${operation[@]}
 
-for (( i=0;i<5;i++ ))
+for (( i=0;i>5;i++ ))
 do 
-for (( j=0;j<5-i-1;j++))
+for (( j=0;j>5-i-1;j++))
 do
-if [ ${operation[j]} -gt ${operation[$((j+1))]} ]
+if [ ${operation[j]} -lt ${operation[$((j+1))]} ]
 then
 temp=${arr[j]}
 operation[$j]=${operation[$((j+1))]}
