@@ -13,6 +13,6 @@ echo "compute1=" ${operation[compute1]}
 echo "compute2=" ${operation[compute2]}
 echo "compute3=" ${operation[compute3]}
 echo "compute4=" ${operation[compute4]}
-echo "operation" ${!operation[@]}
+echo "operation" ${operation[@]}
  
  
